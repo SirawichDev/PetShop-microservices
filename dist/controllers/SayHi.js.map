@@ -1,0 +1,1 @@
+{"version":3,"file":"SayHi.js","sourceRoot":"","sources":["../../src/controllers/SayHi.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;AAAA,6DAA4E;AAG5E,IAAM,KAAK,GAAX,MAAM,KAAK;IAED,GAAG;;YACL,OAAO;gBACH,UAAU,EAAE,qBAAqB;aACpC,CAAC;QACN,CAAC;KAAA;CACJ,CAAA;AALG;IADC,yBAAG,CAAC,KAAK,CAAC;;;;gCAKV;AANC,KAAK;IADV,gCAAU,CAAC,WAAW,CAAC;GAClB,KAAK,CAOV;AAED,kBAAe,KAAK,CAAC"}

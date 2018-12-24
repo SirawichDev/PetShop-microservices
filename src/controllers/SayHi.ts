@@ -9,3 +9,5 @@ class SayHi {
         };
     }
 }
+
+export default SayHi;
