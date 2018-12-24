@@ -1,0 +1,31 @@
+{
+  "name": "microservice-typscript-baby-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "build": "node ./node_modules/typescript/bin/tsc"
+  },
+  "author": "Sirawich Voungchuy",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/config": "0.0.34",
+    "@types/cors": "^2.8.4",
+    "@types/debug": "0.0.31",
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "reflect-metadata": "^0.1.12",
+    "rimraf": "^2.6.2",
+    "routing-controllers": "^0.7.7",
+    "typescript": "^3.2.2",
+    "winston": "^3.1.0"
+  }
+}
