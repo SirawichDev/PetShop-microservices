@@ -22,5 +22,8 @@ class MongoConnect {
         });
 
         this.mongooseInstance = Mongo.connect(connectionString);
+        this.mongooseConnection.on('connected', () => {
+            console.info('default ' + connectionString);
+        });
     }
 }
