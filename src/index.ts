@@ -1,3 +1,3 @@
-import AppConfig from './config/AppConfig';
+import AppConfig from './middlewares/config/AppConfig';
 
 export default new AppConfig();
