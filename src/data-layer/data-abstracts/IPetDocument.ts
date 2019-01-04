@@ -1,6 +1,6 @@
 import mongoose = require('mongoose');
 
-interface PetDocuments extends mongoose.Document {
+interface IPetDocument extends mongoose.Document {
     id: string,
     breed: {
         id: number,
@@ -12,4 +12,4 @@ interface PetDocuments extends mongoose.Document {
     description: string,
 }
 
-export default PetDocuments;
+export default IPetDocument;
