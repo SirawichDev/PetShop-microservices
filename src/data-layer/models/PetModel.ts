@@ -9,4 +9,8 @@ class PetModel {
     get id(): string{
         return (this._getDoc.id).toString();
     }
+    get name(): string{
+        return this._getDoc.name.toString();
+    }
+
 }

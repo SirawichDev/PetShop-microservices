@@ -3,12 +3,11 @@ import mongoose = require('mongoose');
 interface IPetDocument extends mongoose.Document {
     id: string,
     breed: {
-        id: number,
         name:string
     },
     name: string,
     lastUpdated: Date,
-    createAt: Date,
+    createdAt: Date,
     description: string,
 }
 
