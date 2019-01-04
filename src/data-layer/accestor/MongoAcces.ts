@@ -27,7 +27,6 @@ class MongoAccestor {
         });
         return this.mongoInstance;
     }
-
 }
 MongoAccestor.letsConnect();
 export { MongoAccestor };

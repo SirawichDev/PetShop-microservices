@@ -5,8 +5,9 @@ let PetSchemal: Schema = new Schema({
     name: {
         type: String,
         required: true,
-        index:{
-            unique: true,dropDups:true
+        index: {
+            unique: true,
+            dropDups: true
         }
     },
     breed: {
@@ -14,29 +15,28 @@ let PetSchemal: Schema = new Schema({
         required: true
     },
     createdAt: {
-        type:Date,
+        type: Date,
         default: Date.now
     },
     lastUpdated: {
-        type:Date,
+        type: Date,
         default: Date.now
     },
     description: {
         type: String
     }
-
 });
 
-PetSchemal.pre("save", (next:any) => {
+PetSchemal.pre('save', (next: any) => {
     let inDoc = <IPetDocument>this._pdoc;
-    let now= new Date();
+    let now = new Date();
 
-    if(inDoc.createdAt){
+    if (inDoc.createdAt) {
         inDoc.lastUpdated = now;
     } else {
         inDoc.createdAt = now;
     }
     next();
-})
+});
 
 export default PetSchemal;
