@@ -26,3 +26,17 @@ let PetSchemal: Schema = new Schema({
     }
 
 });
+
+PetSchemal.pre("save", (next:any) => {
+    let inDoc = <IPetDocument>this._pdoc;
+    let now= new Date();
+
+    if(inDoc.createdAt){
+        inDoc.lastUpdated = now;
+    } else {
+        inDoc.createdAt = now;
+    }
+    next();
+})
+
+export default PetSchemal;
