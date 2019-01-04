@@ -2,10 +2,10 @@
     "router": {
         "port": 8888,
         "debug": 5858,
-        "host": "stocks-service"
+        "host": "pets-service"
     },
     "mongo": {
-        "urlClient": "mongodb://127.0.0.1:27017/stocks"
+        "front-url": "mongodb://127.0.0.1:27017/pets"
     },
     "loglevel": "info"
 }

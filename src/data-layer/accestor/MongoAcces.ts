@@ -14,7 +14,7 @@ class MongoAccestor {
         if (this.mongoInstance) {
             return this.mongoInstance;
         }
-        let connectionString = config.get('mongo.urlClient').toString();
+        let connectionString = config.get('mongo.front-url').toString();
         this.mongoConnection = Mongo.connection;
 
         this.mongoConnection.once('open', () => {
