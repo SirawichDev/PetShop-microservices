@@ -18,7 +18,7 @@
     "@types/mongoose": "^5.3.5",
     "@types/node": "^10.12.18",
     "body-parser": "^1.18.3",
-    "config": "^3.0.1",
+    "config": "^3.3.8",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
     "debug": "^4.1.1",
